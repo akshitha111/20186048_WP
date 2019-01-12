@@ -1,0 +1,4 @@
+https://www.abeautifulsite.net/how-to-make-rounded-images-with-css
+https://www.w3schools.com/html/html_paragraphs.asp
+https://www.w3schools.com/css/css_positioning.asp
+https://www.w3schools.com/colors/colors_picker.asp
