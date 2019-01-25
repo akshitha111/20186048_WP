@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .akki {
+  	margin-top: 50px;
+  	margin-right: 50px;
+  	margin-bottom: 50px;
+  	background-color: lightblue;
+  }
+
+</style>
+</head>
+<body>
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myInput");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password"
+			}
+		}
+	</script>
+<title>form</title>
+<font color = "red">
+<h2><center>Form</center></h2>
+</font>
+
+<div class = "container">
+	<div class = "akki">
+<form action="/action_page.php">
+  <fieldset>
+    <legend>Comment:</legend>
+    Enter your comment below:<br>
+    <input type="text" name="firstname" value="" size = "35" style = "height: 100px;">
+    <br>
+    <p></p>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+
+<p></p>
+
+ 
+<form action="/action_page.php">
+  Name: <br> <input type="text" name="usrname" required>
+  <input type="submit">
+</form>
+
+<form action="/action_page.php">
+  Comment: <br> <input type="text" name="usrname" required>
+  <input type="submit">
+</form>
+
+<form action = "/action_page.php">
+	Secret key: <br> <input type = "password" id = "myInput" name = "psw" onclick = "validate()"/>
+	<input type = "checkbox" onclick="myFunction()">Show Password
+	<input type = "submit">
+</form>
+
+ 
+<p></p>
+
+<form action="/action_page.php">
+  <fieldset size = "35">
+    <legend>Comment List:</legend>
+
+
+<form action="/action_page.php">
+  <select name="comments">
+    <option value="hi">hi</option>
+    <option value="hello">hello</option>
+    <option value="123">123</option>
+    <option value="123456">123654</option>
+  </select>
+  <br><br>
+  <!-- <input type="submit"> -->
+</form>
+</fieldset>
+</form>
+
+</body>
+</html>
+
+ </div>
+</div>
