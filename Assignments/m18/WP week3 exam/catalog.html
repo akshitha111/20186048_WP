@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Product Catalog</title>
+	<!-- <link rel = "stylesheet" href = "quiz.css"> -->
+	<script type="text/javascript" src = "catalog.js"></script>
+	<style>
+	.header {
+		text-align: right;
+		height: 40px;
+		display: flex;
+	}
+	.style {
+		background-color: darkblue;
+		width: 50px;
+	}
+	.stylenew {
+		font-size: 16px;
+		width: 150px;
+		background-color: white;
+		margin-right: 20px
+	}
+	.rightarrow {
+		width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid darkblue;
+	}
+	.leftarrow {
+		width: 0;
+			  height: 0;
+			  border-top: 20px solid transparent;
+			  border-bottom: 20px solid transparent;
+			  border-left: 20px solid white;
+	}
+	.page {
+		border: 30px solid lightblue;
+		padding: 10px;
+	}
+	.page1 {
+		text-align: right;
+		background-color: lightblue;
+		height: 50px;
+	}
+	/*.dotted {
+		height: 20px
+	}*/
+	#txt {
+		color: darkblue;
+	}
+</style>
+</head>
+
+<body onload = "display()">
+	<div class = "container">
+	<div class = "header">
+		<div class = "style"></div>
+		<div class = "rightarrow"></div>
+		<div class = "stylenew">
+			<center><p id = "txt">Product Catalog</p></center></div>
+		<div class = "leftarrow" style="background-color: darkblue"></div>
+		<div style = "background-color: darkblue; width: 100%"></div>
+	</div>
+	<div style="border:5px solid blue">
+		<div style="border:20px solid lightblue">
+			</div>
+
+	<div class = "page" id = "page" style = "background-color: white; height: 2200px">
+		 <!-- <form>
+			title: <input type = "text" id = "title1" name="title1" value = title1>
+		</form>  -->
+		<div id = "first">
+	<ul>
+
+		<strong>Product 1</strong>
+		<p>
+			<strong>Title:</strong>
+		</p>
+		<p id = "title1"></p>		
+		
+		<p>
+			<strong>Description:</strong>
+		</p>
+
+		<div id = "description1"></div>
+		 <p></p>
+		<p>
+			<strong>Image:</strong>
+		</p>
+		<img src = "1.jpeg" style="height: 80px; width: 80px">
+		
+		<div id = "image1"></div>
+
+		<p>
+			<strong>Quantity:</strong>
+		</p>
+		<div id = "quantity1"></div>
+		<!-- <hr class = "dotted/"> -->
+		<!-- <button onclick = "myFunction()">Delete</button> -->
+		<!-- <button type = "reset" value = "Delete" onclick="Delete()">Delete</button> -->
+		<!-- <button type = "reset" value = "Edit">Edit</button> -->
+		<br>
+		<p></p>
+		<form id = "akshitha" action="/action_page.php">
+			Title:<input type = "text" name = "title" value = "Samsung Galaxy J6 Smart Phone 64 GB, 4 GB RAM, Blue">
+			<br>
+			Description:<input type = "text" name = "description" value = "Super AMOLED Display with 1480 x 720 (HD+) Resolution" >
+			<br>
+			Quantity:<input type = "text" name = "quantity" value = "10" >
+			<br>
+			<p></p>
+			<!-- <button type="reset" value="Reset">Reset</button> -->
+
+			<!-- <input type="submit" value="Submit" onclick="Submit()"> -->
+		</form>
+		<p></p>
+		<!-- <button onclick = "function()">Submit</button> -->
+		<p></p>
+		<button onclick = "myFunction()">Delete</button>
+		<p id = "demo"></p>
+
+		<button onclick = "func()">Submit</button>
+		<!-- <p id = "demo1"></p> -->
+
+		<button type = "button"> Edit </button>
+
+	
+
+		<p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+		<div id = "second">
+		<strong>Product 2</strong>
+		<p><strong>Title:</strong></p>
+		<p id = "title2"></p>
+		<p>
+			<strong>Description:</strong>
+		</p>
+		<div id = "description2"></div>
+		<p></p>
+		<p>
+			<strong>Image:</strong>
+		</p>
+		<img src = "2.jpeg" style="height: 80px; width: 80px">
+		<div id = "image2"></div>
+		<p>
+			<strong>Quantity:</strong>
+		</p>
+		<div id = "quantity2"></div>
+		<br>
+		<p></p>
+		<form>
+			Title:<input id = "abcd" type = "text" name = "title" value = "Mi A2 4GB + 64GB | 6GB + 128GB">
+			<br>
+			Description:<input type = "text" name = "description" value = "15.2cm (5.99) large display" >
+			<br>
+			Quantity:<input type = "text" name = "quantity" value = "20" >
+			<br>
+			<p></p>
+			
+		</form>
+		<p></p>
+		<button onclick = "myFunction1()">Delete</button>
+		<p id = "demo"></p>
+		<button onclick = "func1()">Submit</button>
+		<button type = "button"> Edit </button>
+		<p id = "demo2"></p>
+		
+
+		</div>
+		<p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+		<strong>Product 3</strong>
+		<p><strong>Title:</strong></p>
+		<p id = "title3"></p>
+		<p>
+			<strong>Description:</strong>
+		</p>
+		<div id = "description3"></div>
+		<p></p>
+		<p>
+			<strong>Image:</strong>
+		</p>
+		<img src = "3.jpeg" style="height: 80px; width: 80px">
+		<div id = "image3"></div>
+		<p>
+			<strong>Quantity:</strong>
+		</p>
+		<div id = "quantity3"></div>
+		<br>
+		<p></p>
+		<form>
+			Title:<input id = "abcd" type = "text" name = "title" value = "Apple iphone 32GB">
+			<br>
+			Description:<input type = "text" name = "description" value = "11.4 cm(4.7)display" >
+			<br>
+			Quantity:<input type = "text" name = "quantity" value = "30" >
+			<br>
+			<p></p>
+			
+		</form>
+		<p></p>
+		<button onclick = "myFunction2()">Delete</button>
+		<p id = "demo"></p>
+
+		<button onclick = "func2()">Submit</button>
+		<button type = "button"> Edit </button>
+		<p id = "demo3"></p>
+		
+
+
+
+
+		<p>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+		<strong>Product 4</strong>
+		<p><strong>Title:</strong></p>
+		<p id = "title4"></p>
+		<p>
+			<strong>Description:</strong>
+		</p>
+		<div id = "description4"></div>
+		<p></p>
+		<p>
+			<strong>Image:</strong>
+		</p>
+		<img src = "4.jpeg" style="height: 80px; width: 80px">
+		<div id = "image4"></div>
+		<p>
+			<strong>Quantity:</strong>
+		</p>
+		<div id = "quantity4"></div>
+		<br>
+		<p></p>
+		<form>
+			Title:<input id = "abcd" type = "text" name = "title" value = "red mi note 6 pro">
+			<br>
+			Description:<input type = "text" name = "description" value = "15.9 cm (6.26 inch) FHD+ Display with Resolution" >
+			<br>
+			Quantity:<input type = "text" name = "quantity" value = "40" >
+			<br>
+			<p></p>
+			
+		</form>
+		<p></p>
+		<button onclick = "myFunction3()">Delete</button>
+		<p id = "demo"></p>
+		<button onclick = "func3()">Submit</button>
+		<button type = "button"> Edit </button>
+		<p id = "demo4"></p>
+
+
+
+
+
+	</ul>
+	
+
+
+</body>
+</html>
+
